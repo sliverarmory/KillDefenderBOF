@@ -1,6 +1,6 @@
 #pragma once
 
-#include <windows.h>
+#include <Windows.h>
 #include <TlHelp32.h>
 
 #define NT_SUCCESS(Status) ((NTSTATUS)(Status) >= 0)

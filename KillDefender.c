@@ -10,7 +10,7 @@
 //      COMPILE WITH: gcc -o KillDefender.o -c KillDefender.c -masm=intel
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#include <windows.h>
+#include <Windows.h>
 #include "KillDefender.h"
 
 #include "syscalls.c"
