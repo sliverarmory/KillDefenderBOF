@@ -36,7 +36,7 @@ jobs:
 
     - name: Build Package
       run: |
-        x86_64-w64-mingw32-gcc -c KillDefender.c -o ./compiled/kill-defender.amd64.o
+        x86_64-w64-mingw32-gcc -masm=intel -c KillDefender.c -o ./compiled/kill-defender.amd64.o
         rm -f ./compiled/.gitkeep
         VERSION=$(git describe --tags --abbrev=0)
         cat extension.json | jq ".version |= \"$VERSION\"" > ./compiled/extension.json
